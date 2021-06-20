@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+#background{
+    display: none;
+    width:100vw; 
+    height: 100vh; 
+    opacity:0.3;
+    
+}
+#conteudo-login{
+    display: none;
+    height: 500px;
+    width: 100%;
+    /* background-color: #1b1b1b; */
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    margin: auto;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+#esquerda-login{
+    background-image: linear-gradient(#BF1A2C,#430910);
+    height: 500px;
+}
+
+#direita-login{
+    background-color: white;
+    height: 500px;
+    color: #BF1A2C;
+}
+#logo-login{
+    width:60%;
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    margin: auto;
+}
+#titulo-login{
+    
+    margin-top: 80px;
+    margin-bottom: 20px;
+    width: 150px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 30px;
+}
+@media screen and (max-width: 576px){
+    #conteudo-login{
+        margin: 0;
+    }
+    #esquerda-login{
+        height: 100px;
+    }   
+    #logo-login{
+        width:100px;
+        position: absolute;
+        top: 0; 
+        bottom: 0;
+        left: 0; 
+        right: 0;
+        margin: auto;
+    }
+    #titulo-login{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}

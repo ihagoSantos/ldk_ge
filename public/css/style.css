@@ -1,0 +1,316 @@
+/* Cor primária da Ludke : #BF1A2C */
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ================== status do pagamento =============== */
+.statusPago{
+    width: 15px;
+    height: 15px;
+    background-color: #003300;
+    border-radius: 50%;
+}
+.statusAguardando{
+    width: 15px;
+    height: 15px;
+    background-color: #ff9933;
+    border-radius: 50%;
+}
+.statusVencido{
+    width: 15px;
+    height: 15px;
+    background-color: #990000;
+    border-radius: 50%;
+}
+/* =========================================================*/
+
+/* ------------------ NAV TABS ------------------ */
+
+.nav-link-contas{
+    color: #404040 
+}
+.nav-link-contas:hover{
+    color: #700f1b !important;
+}
+.nav-link-contas.active{
+    
+    color: #990000 !important;
+}
+/* -------------- END NAV TABS ------------------ */
+
+.limparBusca{
+    margin-bottom: 15px;
+}
+.obrigatorio{
+    color:red;
+    font-weight: bold;
+}
+input[type=text]{
+    text-transform: uppercase;
+}
+textarea{
+    text-transform: uppercase;
+}
+.cardFinalizarPedidos{
+    /* box-shadow: 0 5px 9px 0 #ccc; */
+    margin-bottom: 20px;
+}
+.informacoes{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+/* RETIRA SPIN DO INPUT NUMBER */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+#tabelaPedidos td{
+    font-size: 22px;
+}
+/* --------- Cards ---------------*/
+#card{
+    width: 200px;
+    height: 200px;
+    background-color: #BF1A2C;
+    margin:50px;
+    transition: all 0.1s linear;
+}
+#card:hover{
+    box-shadow: 0 5px 9px 0 #bbbbbb, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.1s linear;
+}
+#card-image{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 50px;
+}
+
+#card-image-categorias{
+    margin-top: 0;
+    margin-bottom: -30px;
+    width: 150px;
+}
+#card-text{
+    font-size: 25px;
+    
+}
+#link-card{
+    text-decoration: none;
+    color: white;
+}
+
+.titulo-pagina{
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 2px solid #BF1A2C;
+    margin-bottom: 20px ;
+}
+.titulo-pagina-nome{
+    color: #BF1A2C;
+}
+.titulo-venda-pedido{
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 2px solid #BF1A2C;
+    
+}
+.thead-primary{
+    background-color: #BF1A2C;
+    color: white;
+}
+.btn-primary-ludke{
+    border-radius: 0;
+    background-color: #BF1A2C;
+    color: white !important;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.btn-primary-ludke:hover{
+    background-color: #700f1b;
+    color: white;
+    width: 100%;
+}
+.btn-secondary-ludke{
+    border-radius: 0;
+    background-color: gray;
+    color: white !important;
+    width: 100%;
+    transition: 0.2s;
+}
+.btn-secondary-ludke:hover{
+    background-color: #404040;
+    color: white;
+    width: 100%;
+}
+
+.btn-pedido{
+    margin-top: 20px;
+    padding: 20px 0 20px 0;
+    font-size: 20px;
+}
+
+.input-ludke{
+    border-radius: 0;
+    border-color: #BF1A2C;
+}
+
+/* NAVBAR */
+
+.navbar{
+    height: 100%;
+    background-color: #BF1A2C;
+    font-size: large;
+}
+#white{
+    color:white;
+}
+
+.navbar-dark{
+    background-color: #BF1A2C;
+}
+
+#logo{
+    padding: 10px;
+    width:100px;
+}
+
+.icone{
+    width: 25px;
+    margin: 5px;
+}
+
+
+#iconeEdit{
+    width:25px; 
+    margin-right:20px;
+}
+
+#iconeDelete{
+    width:20px;
+}
+
+/* FORMULÁRIO */
+#categoriaForm{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.fotos{
+    /* display: inline; */
+    float: left;
+}
+ul.listaImagemUpload{
+    list-style-type: none;
+}
+ul.listaImagem{
+    list-style-type: none;
+}
+ul.listaImagem li{
+    float: left;
+}
+.fotoProduto{
+    
+    width: 120px;
+    /* height: 70px; */
+    margin-top: 20px;
+    margin-right: 20px;
+    float:left;
+    z-index: 1;
+    position:relative;
+    /* background-color: #eee; */
+}
+.itemFoto{
+    width: 120px;
+    z-index: 2;
+}
+.excluirFoto{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 5;
+    background-image: url("/img/window-close-solid.svg");
+    top: 0;
+    margin-top:-10px;
+    margin-left: 95px;
+    float: right;
+    display: none;
+    
+}
+#conteudo-pedidos{
+    width: 95%;
+}
+
+#listaPedidos{
+    height: 35vh;
+    overflow-y:scroll;
+}
+.card-pedidos{
+    margin-top:20px;
+}
+.card-pedidos .card-header{
+    font-size: large;
+}
+#cardCliente{
+    height: 35vh;
+}
+#cardProduto{
+    height: 36vh;
+}
+/* #card-venda{
+    height: 27vh;
+} */
+/* #card-venda #valorTotal{
+    font-size: 40px;
+} */
+
+#alert{
+    display: none;
+}
+#resultadoBuscaProduto{
+    position: absolute;
+    z-index: 50;
+}
+#resultadoBuscaProduto a{
+    text-decoration: none;
+    color: black;
+}
+#resultadoBuscaProduto a :hover{
+    background-color: #ccc;
+}
+
+#resultadoBuscaCliente{
+    position: absolute;
+    z-index: 50;
+}
+#resultadoBuscaCliente a{
+    text-decoration: none;
+    color: black;
+}
+#resultadoBuscaCliente a :hover{
+    background-color: #ccc;
+}
+
+
+@media screen and (max-width: 576px) {
+    /* .navbar{
+        height: 100%;
+        background-color: #BF1A2C;
+        color: white;
+    } */
+    #logo{
+        padding: 5px;
+        width:60px;
+    }
+}
